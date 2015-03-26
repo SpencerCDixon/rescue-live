@@ -1,0 +1,10 @@
+<%= @question.title %>
+<%= @question.body %>
+
+<%= form_for [@question, @answer] do |f| %>
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+
+  <%= f.submit 'Create Answer', class: "button tiny success" %>
+<% end %>
+

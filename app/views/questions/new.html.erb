@@ -1,0 +1,11 @@
+<h1>Create a new question</h1>
+
+<%= form_for @question do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+
+  <%= f.submit 'Create Question', class: "button tiny success" %>
+<% end %>
