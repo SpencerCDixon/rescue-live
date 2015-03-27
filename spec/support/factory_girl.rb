@@ -12,4 +12,10 @@ FactoryGirl.define do
     body "lllI can successfully create a questionI can successfully create a questionI can successfully create a questionI can successfully create a questionI can successfully create a questionI can successfully create a questionllll"
     user
   end
+
+  factory :answer do
+    body "The meaning to life is 42."
+    question
+    user
+  end
 end
